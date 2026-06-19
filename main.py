@@ -40,4 +40,12 @@ if float(buying_price)>=convert_to_int:
         )
     print("Email sent successfully")
 else:
-    print("Price is still above your target.")
+
+    with SMTP("smtp.gmail.com",587) as server:
+        server.starttls()
+        server.login(myemail,pass1)
+        server.sendmail(
+            from_addr=myemail,
+            to_addrs=receiver_email,
+            msg=f"Subject:Amazon Price Deals!\n\n{title}\nyour coated price ₹{buying_price} and now it is at ₹{actual_price}\nIt is expensive now".encode("utf-8")
+        )
