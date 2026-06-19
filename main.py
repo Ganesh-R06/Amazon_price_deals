@@ -40,6 +40,9 @@ if float(buying_price)>=convert_to_int:
         )
     print("Email sent successfully")
 else:
+    myemail = os.environ["EMAIL"]
+    pass1 = os.environ["EMAIL_PASSWORD"]
+    receiver_email = os.environ["RECEIVER_EMAIL"]
 
     with SMTP("smtp.gmail.com",587) as server:
         server.starttls()
@@ -47,5 +50,5 @@ else:
         server.sendmail(
             from_addr=myemail,
             to_addrs=receiver_email,
-            msg=f"Subject:Amazon Price Deals!\n\n{title}\nyour coated price ₹{buying_price} and now it is at ₹{actual_price}\nIt is expensive now".encode("utf-8")
+            msg=f"Subject:Amazon Price Deals!\n\nIt is expensive now"
         )
