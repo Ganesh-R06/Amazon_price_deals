@@ -22,7 +22,7 @@ price_text=price.text
 actual_price=price_text.split("₹")[1]
 convert_to_int=int(float(actual_price.replace(",", "")))
 
-buying_price=60000
+buying_price=40000
 
 if float(buying_price)>=convert_to_int:
 
