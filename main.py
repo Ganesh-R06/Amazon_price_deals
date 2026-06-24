@@ -5,8 +5,11 @@ from smtplib import SMTP
 import os
 
 headers={
-   "Accept-Language":"en-US,en;q=0.5",
-   "User-Agent":"CCBot/2.0 (https://commoncrawl.org/faq/)"
+   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Referer": "https://www.google.com/"
 }
 url="https://www.amazon.in/OnePlus-Charcoal-Snapdragon%C2%AE-Personalised-Game-Changing/dp/B0FZSXYV6K/ref=sr_1_33_sspa?crid=30E8YIS7TIF4X&dib=eyJ2IjoiMSJ9.HdDcMgq7zST1Lq56dQ5wn56PlhsvVdF2b-C727YFyonGjHj071QN20LucGBJIEps.6kUhLGJ9Vrzt30dTk6Ew4VLBSg3d03kQBxJjcCWnAIg&dib_tag=se&keywords=phone%2Bunder%2B25k%2B&qid=1781855427&sprefix=phone%2Caps%2C338&xpid=FBWmj6CT96Jkm&aref=q58bZ7Pqsc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfbmV4dA&th=1"
 
